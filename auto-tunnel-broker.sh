@@ -1,5 +1,6 @@
 #!/bin/bash
-source ./creds.sh
+export USERNAME="$1"
+export PASSWORD="$2"
 
 COOKIE=$(curl -sS  -H 'Content-Type: application/x-www-form-urlencoded' \
              --data-urlencode "f_user=$USERNAME" \
